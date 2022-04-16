@@ -23,8 +23,8 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--disable-notifications')
 chrome_options.add_argument("--headless")
 
-id = 'a664e292dd94406cbca496b6f4ada586'
-secret = '58ed3db92fa5467ca9d76487ba573316'
+id = str(input('Enter the ID'))
+secret = str(input("Enter the secret"))
 
 values = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .+=-")
 
@@ -232,5 +232,3 @@ def changeState(btn1):
 
 if __name__ == '__main__':
     Thread(target=gui).start()
-
-# start("7dyygRNkq3QUB0EliWthu6")
